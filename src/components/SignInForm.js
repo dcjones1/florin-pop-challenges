@@ -51,6 +51,15 @@ const styles = {
     background: 'transparent',
     border: '2px solid white',
     borderRadius: '50px',
+  },
+  formButton: {
+    width: '40%',
+    height: '50px',
+    fontSize: '20px',
+    color: 'white',
+    background: '#ff4b2b',
+    border: '2px solid white',
+    borderRadius: '50px',
   }
 }
 
@@ -76,7 +85,7 @@ class SignInForm extends Component {
                 <input type="email" placeholder="email" /><br />
                 <input type="password" placeholder="password" />
               </form>
-              <button className={classes.button}>SIGN IN</button>
+              <button className={classes.formButton}>SIGN IN</button>
             </div>
             <div className={classes.rightSide}>
               <h1>Hello, Friend!</h1>
@@ -100,7 +109,7 @@ class SignInForm extends Component {
                 <input type="email" placeholder="Email" /><br />
                 <input type="password" placeholder="Password" />
               </form>
-              <button className={classes.button}>SIGN IN</button>
+              <button className={classes.formButton}>SIGN IN</button>
             </div>
           </React.Fragment>
 
