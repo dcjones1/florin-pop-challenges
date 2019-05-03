@@ -21,7 +21,6 @@ const styles = {
     marginRight: '3%',
   },
   leftSideTop: {
-    // width: '100%',
     flex: 1,
     color: 'black',
     backgroundColor: 'white',
@@ -29,21 +28,21 @@ const styles = {
     borderTopLeftRadius: '10px',
     borderBottomLeftRadius: '10px',
   },
-  rightSide: {
-    flex: 1,
-    marginLeft: '3%',
-    marginRight: '3%',
-    // backgroundColor: 'white',
-  },
-  rightSideTop: {
-    width: '100%',
-    flex: 1,
-    color: 'black',
-    backgroundColor: 'white',
-    height: '100%',
-    borderTopLeftRadius: '10px',
-    borderBottomLeftRadius: '10px',
-  },
+  // rightSide: {
+  //   flex: 1,
+  //   marginLeft: '3%',
+  //   marginRight: '3%',
+  //   // backgroundColor: 'white',
+  // },
+  // rightSideTop: {
+  //   width: '100%',
+  //   flex: 1,
+  //   color: 'black',
+  //   backgroundColor: 'white',
+  //   height: '100%',
+  //   borderTopLeftRadius: '10px',
+  //   borderBottomLeftRadius: '10px',
+  // },
   button: {
     width: '40%',
     height: '50px',
@@ -69,6 +68,7 @@ class SignInForm extends Component {
     return (
       <div className={classes.slider}>
         {this.state.signIn ? (
+
           <React.Fragment>
             <div className={classes.leftSideTop}>
               <h1>Sign in</h1>
@@ -84,7 +84,9 @@ class SignInForm extends Component {
               <button className={classes.button}>SIGN UP</button>
             </div>
           </React.Fragment>
+
         ) : (
+
           <React.Fragment>
             <div className={classes.leftSide}>
               <h1>Welcome Back!</h1>
@@ -101,6 +103,7 @@ class SignInForm extends Component {
               <button className={classes.button}>SIGN IN</button>
             </div>
           </React.Fragment>
+
         )}
       </div>
     )
