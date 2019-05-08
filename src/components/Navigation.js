@@ -10,14 +10,21 @@ const styles = {
     flexDirection: 'column',
   },
   header: {
-    marginBottom: '45%'
+    marginBottom: '45%',
+    color: 'white',
   },
   navTile: {
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
     backgroundColor: 'white',
     height: '100px',
     width: '450px',
     borderBottomLeftRadius: '25px',
     borderBottomRightRadius: '25px',
+    '& i': {
+      marginRight: '15px',
+    }
   }
 }
 
@@ -31,10 +38,13 @@ const Navigation = (props) => {
         Weekly Coding Challenge #3 - Navigation
       </h1>
       <div className={classes.navTile}>
-        <i class="fas fa-home"></i><button onClick={() => setBodyColor('rgb(91, 55, 183)')}>Home</button>
-        <button onClick={() => setBodyColor('rgb(201, 55, 157)')}>Likes</button>
-        <button onClick={() => setBodyColor('rgb(230, 169, 25)')}>Search</button>
-        <button onClick={() => setBodyColor('rgb(28, 150, 162)')}>Profile</button>
+        <i className="fas fa-home" onClick={() => setBodyColor('rgb(91, 55, 183)')}>&nbsp;Home</i>
+
+        <i className="far fa-heart" onClick={() => setBodyColor('rgb(201, 55, 157)')}><b>&nbsp;Likes</b></i>
+
+        <i className="fas fa-search" onClick={() => setBodyColor('rgb(230, 169, 25)')}>&nbsp;Search</i>
+
+        <i className="far fa-user" onClick={() => setBodyColor('rgb(28, 150, 162)')}><b>&nbsp;Profile</b></i>
       </div>
     </div>
   )
